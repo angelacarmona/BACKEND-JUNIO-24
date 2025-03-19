@@ -48,6 +48,10 @@ module.exports = {
           key: 'id'
         }
       },
+      visibleUntil: { // PASO 1: AGREGAMOS NUEVA PROPIEDAD
+        type: Sequelize.DATE,
+        defaultValue: null
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
